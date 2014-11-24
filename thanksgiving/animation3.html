@@ -16,16 +16,30 @@
 
   ctx.fillStyle = "blue";
   ctx.fillRect(0,0,1100,900);
+
+  // var y = {
+  //   var i = 900;
+  //   while (i > 450) {
+  //     i = i - 1;
+  //   }
+  // }
   
-  // while (x = 0; x < canvas.width; x++) {
+
+  // drawCircle: function() {
+  //         ctx.beginPath();
+  //         ctx.fillStyle = "yellow";
+  //         ctx.arc(200, y, 50, 0, Math.PI*2, false);
+  //         ctx.stroke();
+  //         ctx.fill(); 
+  //       }
+  
+  
     ctx.beginPath();
     ctx.fillStyle = "yellow";
     ctx.arc(200, 450, 50, 0,Math.PI*2,false);
     ctx.stroke();
     ctx.fill();
-  // }
 
-  
 
  //SKYLINE 
   
@@ -283,8 +297,39 @@ var draw = function() {
     ctx.fill();
 
   }
+
+  // var drawCircle = function() {
+    
+  //   ctx.beginPath();
+  //   ctx.arc(200,y,50,0,2*Math.PI);
+  //   ctx.stroke();
+  // }
+
+  
+     
+
+  var drawWarning = function() {
+    ctx.fillRect(370,460, 2,5);
+    ctx.fillRect(135,575, 2,5);
+    ctx.fillstyle = "yellow";
+  }
+
+  //   var color = "black";
+  //   if (color = "black") {
+  //     color = "yellow"
+  //   } else if (color = "yellow") {
+  //     color = "black";
+  //   }
+  // }
+
+// while (y=900; y > 449; y--) {   
+//           drawcircle();
+//      }
+ 
+
 setInterval(draw, 1000);
 setInterval(draw2, 2000);
+setInterval(drawWarning,10);
 
   
 
